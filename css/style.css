@@ -86,7 +86,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(105, 160, 245, 0.04);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,8 @@ body {
     font-family: Montserrat, sans-serif;
     background-color: #ffd600;
     color: black;
-    padding: 20px 70px;
+    padding: 25px 100px;
+    border-radius: 18px;
 }
 .close{
     position: absolute;
@@ -130,6 +131,22 @@ body {
 }
 
 .bottom span {
-    color: rgb(153,153,153);
-    font-family: Open-Sans-Italic;
+    color: rgb(153, 153, 153);
+    font-family: "Open-Sans-Italic";
+    font-size: 20px;
+}
+
+.yellow-btn {
+    margin-top: 40px;
+    background-color: #ffd600;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+.yellow-btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid #ffd600;
 }

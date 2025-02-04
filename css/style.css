@@ -11,6 +11,14 @@
     font-family: "Open-Sans";
     src: url(../fonts/OpenSans.ttf);
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Open-Sans-Italic";
+    src: url(../fonts/OpenSans_Condensed-Italic.ttf);
+}
 
 *{
     padding: 0;
@@ -21,17 +29,20 @@
 body {
     background-color: #292d33;
     color: white;
-    font-family: "Oswald", sans-serif;
 
 }
 .main-header {
     font-size: 72px;
     margin: 30px 0 50px;
+    font-family: "Oswald", sans-serif;
 }
 .cont .item {
     display: flex;
     margin-bottom: 30px ;
 
+}
+.cont {
+    font-family: "Oswald", sans-serif;
 }
 
 .cont .item >img {
@@ -65,4 +76,60 @@ body {
 .right-side .btn:hover {
     background-color: white;
     color: black;
+}
+
+/*modal*/
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 160, 245, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    border-radius: 20px;
+    border: 3px solid #ffd600;
+    background-color: white;
+    overflow: hidden;
+}
+.modal-content h1{
+    position: relative ;
+    font-size: 96px;
+    font-family: Montserrat, sans-serif;
+    background-color: #ffd600;
+    color: black;
+    padding: 20px 70px;
+}
+.close{
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    top: 5px;
+    right: 10px;
+}
+
+.bottom {
+    font-family: Open-Sans, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.bottom .first {
+    color: black;
+    font-size: 20px;
+}
+.bottom .first b {
+    font-size: 72px;
+}
+
+.bottom span {
+    color: rgb(153,153,153);
+    font-family: Open-Sans-Italic;
 }
